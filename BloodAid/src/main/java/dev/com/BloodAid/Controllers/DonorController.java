@@ -1,6 +1,6 @@
 package dev.com.BloodAid.Controllers;
 
-import dev.com.BloodAid.entity.Donor;
+import dev.com.BloodAid.models.Donor;
 import dev.com.BloodAid.service.DonorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

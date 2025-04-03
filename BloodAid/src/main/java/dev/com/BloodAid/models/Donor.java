@@ -19,10 +19,6 @@ public class Donor {
     private String bloodType;
     private String phone;
 
-    public Donor() 
-    {
-
-    }
 
 
     public Donor(String name, String email, String bloodType, String phone) 
