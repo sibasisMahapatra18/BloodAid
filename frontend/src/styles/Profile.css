@@ -1,0 +1,46 @@
+.profile-container {
+    padding: 60px 40px 40px 40px;
+    color: #333;
+  }
+  
+  .profile-header {
+    color: #b30000;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  .profile-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px; /* Larger font */
+    color: #222;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 650px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .profile-item {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .edit-btn {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-btn:hover {
+    background-color: #900000;
+  }
+  
