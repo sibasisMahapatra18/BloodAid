@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodAid Admin - Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+
+
+   
+
+    
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <h1>BloodAid</h1>
+            <span>Admin Panel</span>
+        </div>
+        
+        <div class="alert alert-danger" id="error-message" role="alert"></div>
+        
+        <form id="login-form" action="dashboard.html" method="get">
+           
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-danger">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Call your backend API
+            fetch('/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Login failed');
+                }
+                return response.text();
+            })
+            .then(token => {
+                // Store the JWT token
+                localStorage.setItem('token', token);
+                // Redirect to dashboard
+                window.location.href = 'dashboard.html';
+            })
+            .catch(error => {
+                // Show error message
+                const errorMessage = document.getElementById('error-message');
+                errorMessage.textContent = 'Invalid email or password';
+                errorMessage.style.display = 'block';
+            });
+        });
+
+
+//password
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // stop actual form submission
+
+    // You can set some dummy check here if you want
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    
+    if (email && password) {
+        
+        localStorage.setItem('token', 'password123');
+
+        
+        window.location.href = 'dashboard.html';
+    } else {
+        alert('Bruh... enter something');
+    }
+});
+
+    </script>
+</body>
+</html>
