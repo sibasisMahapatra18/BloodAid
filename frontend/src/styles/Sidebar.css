@@ -1,0 +1,80 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* push content to top and signout to bottom */
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-content {
+  padding-top: 30px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #ff0000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.sidebar ul li svg {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sidebar ul li:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.sidebar ul li:hover svg {
+  color: #ffffff;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-footer {
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #fff;
+  border-top: 1px solid #222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-footer:hover {
+  background-color: #ff0000;
+}
+
+.signout-icon {
+  margin-right: 8px;
+}
