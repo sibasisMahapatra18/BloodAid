@@ -7,7 +7,7 @@ import lombok.*;
 @Table(name = "donors")
 @Getter
 @Setter
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
 public class Donor {
     @Id

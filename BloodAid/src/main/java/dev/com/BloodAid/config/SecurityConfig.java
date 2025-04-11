@@ -35,7 +35,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .cors(Customizer.withDefaults()) // Enable CORS if needed
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/register", "/auth/login", "/h2-console/**", "/error").permitAll()
+                        .requestMatchers("/auth/register", "/auth/login", "/h2-console/**", "/error", "/api/blood-requests/**", "/api/donors/**").permitAll()
                         // Public endpoints
                         .anyRequest().authenticated() // Everything else requires authentication
                 )

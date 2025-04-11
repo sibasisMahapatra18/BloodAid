@@ -1,6 +1,6 @@
 package dev.com.BloodAid.repo;
 
-import dev.com.BloodAid.entity.Donor;
+import dev.com.BloodAid.models.Donor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

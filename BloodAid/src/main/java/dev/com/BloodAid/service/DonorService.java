@@ -1,7 +1,7 @@
-package dev.com.BloodAid.Services;
+package dev.com.BloodAid.service;
 
-import dev.com.BloodAid.entity.Donor;
-import dev.com.BloodAid.repository.DonorRepository;
+import dev.com.BloodAid.models.Donor;
+import dev.com.BloodAid.repo.DonorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ public class DonorService
     @Autowired
     private DonorRepository donorRepository;
 
-    public List<Donor> getAllDonors() 
+    public List<Donor> getAllDonors()
     {
         return donorRepository.findAll();
     }
