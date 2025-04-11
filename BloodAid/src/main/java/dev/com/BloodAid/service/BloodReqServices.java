@@ -5,14 +5,16 @@ import dev.com.BloodAid.models.User;
 import dev.com.BloodAid.repo.Blood_Req_Repo;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+<<<<<<< HEAD
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+=======
+>>>>>>> 5336644b3ccc4a24a346c6fdcdcd9f82db0caa0b
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 @AllArgsConstructor
 @NoArgsConstructor
 public class BloodReqServices {

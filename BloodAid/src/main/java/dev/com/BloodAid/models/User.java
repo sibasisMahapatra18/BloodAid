@@ -137,9 +137,13 @@ public class User implements UserDetails {
     }
 
     @Override
+<<<<<<< HEAD
     public String getPassword() {
         return password; // Returns the password field
     }
+=======
+    public String getUsername() { return userName; }
+>>>>>>> 5336644b3ccc4a24a346c6fdcdcd9f82db0caa0b
 
     @Override
     public String getUsername() {
