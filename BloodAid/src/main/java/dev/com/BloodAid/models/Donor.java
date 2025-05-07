@@ -7,7 +7,7 @@ import lombok.*;
 @Table(name = "donors")
 @Getter
 @Setter
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
 public class Donor {
     @Id
@@ -19,10 +19,6 @@ public class Donor {
     private String bloodType;
     private String phone;
 
-    public Donor() 
-    {
-
-    }
 
 
     public Donor(String name, String email, String bloodType, String phone) 
