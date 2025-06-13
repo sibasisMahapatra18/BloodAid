@@ -9,6 +9,11 @@ import ViewStatus from "./components/DashboardContent/ViewStatus";
 import AvailableDonors from "./components/DashboardContent/AvailableDonors";
 import Profile from "./components/DashboardContent/Profile";
 import History from "./components/DashboardContent/History";
+//admin components
+import AdminLogin from "./AdminDashboard/AdminLogin";
+import AdminDashboard from "./AdminDashboard/AdminDashboard";
+
+
 
 import "./styles/global.css";
 
@@ -19,6 +24,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        {/* ✅ Admin routes */}
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin/*" element={<AdminDashboard />} />
 
         {/* ✅ Dashboard with nested routes */}
         <Route path="/dashboard" element={<Dashboard />}>

@@ -1,0 +1,309 @@
+/* -----------------------------
+   General Reset & Font
+------------------------------ */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* -----------------------------
+   Admin Login Page
+------------------------------ */
+.admin-login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.admin-login-card {
+  background-color: white;
+  padding: 40px 50px;
+  width: 420px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.admin-login-card h2 {
+  margin-bottom: 24px;
+  color: #b71c1c;
+  font-size: 26px;
+}
+
+.admin-login-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.admin-login-card button {
+  width: 100%;
+  padding: 14px;
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-login-card button:hover {
+  background-color: #a31616;
+}
+
+/* -----------------------------
+   Admin Dashboard Layout
+------------------------------ */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* -----------------------------
+   Sidebar
+------------------------------ */
+.admin-sidebar {
+  width: 240px;
+  background-color: #b71c1c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.admin-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Nav inside sidebar */
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-link {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 14px;
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.admin-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.admin-link.active {
+  background-color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Sign Out Button */
+.signout-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: white;
+  color: #b71c1c;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signout-btn:hover {
+  background-color: #f2f2f2;
+}
+
+/* -----------------------------
+   Main Content Area
+------------------------------ */
+.admin-main {
+  flex-grow: 1;
+  padding: 40px 60px;
+  overflow-y: auto;
+}
+
+/* Sample Headings and Paragraphs */
+.admin-main h1 {
+  color: #b71c1c;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.admin-main p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Admin Dashboard Home Styles */
+.admin-home {
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.dashboard-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #c62828;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: white;
+  border-left: 6px solid #c62828;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.dashboard-card p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #c62828;
+}
+
+.dashboard-card.users {
+  border-left-color: #1976d2;
+}
+
+.dashboard-card.requests {
+  border-left-color: #ef6c00;
+}
+
+.dashboard-card.donations {
+  border-left-color: #2e7d32;
+}
+.admin-content {
+  padding: 30px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.admin-page-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f3f3f3;
+  font-weight: 600;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  margin-right: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+.admin-content {
+  padding: 20px;
+}
+
+.admin-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #f5f5f5;
+}
+
+.action-btn {
+  padding: 6px 10px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.approve {
+  background-color: #4caf50;
+  color: white;
+}
+
+.reject {
+  background-color: #f44336;
+  color: white;
+}
