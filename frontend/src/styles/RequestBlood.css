@@ -1,0 +1,87 @@
+/* Wraps the entire right content area excluding sidebar */
+.request-blood-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Placeholder for sidebar space */
+.sidebar-placeholder {
+  width: 270px; /* Same as your sidebar width */
+}
+
+/* Flex container to center the form */
+.request-blood-content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px 30px;
+  box-sizing: border-box;
+}
+
+/* Card/form container */
+.request-content {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Title */
+.request-content h2 {
+  color: #b30000;
+  font-size: 26px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon */
+.request-content .icon {
+  color: #b30000;
+  font-size: 24px;
+}
+
+/* Form layout */
+.request-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border 0.2s ease;
+}
+
+.request-form input:focus,
+.request-form select:focus,
+.request-form textarea:focus {
+  border-color: #b30000;
+  outline: none;
+}
+
+/* Submit button */
+.request-form button {
+  padding: 12px;
+  background-color: #b30000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.request-form button:hover {
+  background-color: #ff1a1a;
+}

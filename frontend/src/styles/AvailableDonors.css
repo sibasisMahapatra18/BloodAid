@@ -1,0 +1,28 @@
+.available-donors-container {
+    padding: 60px 40px 40px 40px;
+    color: #333;
+  }
+  
+  .available-donors-container h2 {
+    color: #b30000;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .donors-list {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    text-align: center;
+    line-height: 1.5;
+    overflow: visible;
+  }
+  
+  
