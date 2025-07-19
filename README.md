@@ -1,4 +1,4 @@
-```markdown
+```
 # 🩸 BloodAid
 
 BloodAid is a Java Spring Boot application designed to create a centralized blood donation platform. It facilitates connections between donors, recipients, and blood banks while offering tools for managing donor databases, blood requests, and inventory—bringing innovation to life-saving blood donation services.
